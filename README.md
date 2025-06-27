@@ -135,9 +135,9 @@ The IFRA Group in Cranfield University (Bedfordshire, UK) has identified a huge 
 
 All packages in this repository have been developed, executed and tested in an Ubuntu 22.04 machine with ROS2.0 Humble. Please find below all the required steps to set-up a ROS2.0 Humble environment in Ubuntu and install the Robot Simulation packages.
 
-### ROS2.0 Humble Environment Set-Up
+### ROS2.0 Jazzy Environment Set-Up
 
-1. Install Ubuntu 22.04: [https://ubuntu.com/desktop](https://ubuntu.com/desktop)
+1. Install Ubuntu 24.04: [https://ubuntu.com/desktop](https://ubuntu.com/desktop)
 2. Install Git:
     * In terminal shell:
         ```sh
@@ -152,20 +152,20 @@ All packages in this repository have been developed, executed and tested in an U
         git config --global credential.helper store
         ```
 3. Install ROS2.0 Humble: 
-    * Follow instructions in: [ROS2 Humble Tutorials - Installation](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)
-    * Source the ROS2.0 Humble installation in the .bashrc file (hidden file in /home):
+    * Follow instructions in: [ROS2 Jazzy Tutorials - Installation](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html#id4)
+    * Source the ROS2.0 Jazzy installation in the .bashrc file (hidden file in /home):
         ```sh
-        source opt/ros/humble/setup.bash
+        source opt/ros/jazzy/setup.bash
         ```
 4. Install MoveIt!2 for ROS2 Humble:
     * Reference: [MoveIt!2 Humble](https://moveit.picknik.ai/humble/index.html)
     * Command for [binary install](https://moveit.ros.org/install-moveit2/binary):
         ```sh
-        sudo apt install ros-humble-moveit
+        sudo apt install ros-jazzy-moveit
         # Binaries are recommended for a cleaner MoveIt!2 install and usage.
         ```
 5. Create and configure the ROS2.0 Humble ~/dev_ws environment/workspace:
-    * Follow instructions in: [ROS2 Humble Tutorials - Create a Workspace](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html)
+    * Follow instructions in: [ROS2 Humble Tutorials - Create a Workspace](https://docs.ros.org/en/jazzy/Tutorials/Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace.html)
     * Source ~/dev_ws workspace in .bashrc file:
         ```sh
         source ~/dev_ws/install/local_setup.bash
@@ -173,22 +173,22 @@ All packages in this repository have been developed, executed and tested in an U
 6. Install ROS2 packages, which are required to launch ROS2 Robot Simulation and Control environments:
     * ROS2 Control:
         ```sh
-        sudo apt install ros-humble-ros2-control
+        sudo apt install ros-jazzy-ros2-control
         ```
     * ROS2 Controllers:
         ```sh
-        sudo apt install ros-humble-ros2-controllers
-        sudo apt install ros-humble-gripper-controllers
+        sudo apt install ros-jazzy-ros2-controllers
+        sudo apt install ros-jazzy-gripper-controllers
         ```
     * Gazebo-ROS2:
         ```sh
         sudo apt install gazebo
-        sudo apt install ros-humble-gazebo-ros2-control
-        sudo apt install ros-humble-gazebo-ros-pkgs
+        sudo apt install ros-jazzy-gazebo-ros2-control
+        sudo apt install ros-jazzy-gazebo-ros-pkgs
         ```
     * xacro:
         ```sh
-        sudo apt install ros-humble-xacro
+        sudo apt install ros-jazzy-xacro
         ```
     * Fix cycle time issues in humble-moveit (temporary fix):
         ```sh
